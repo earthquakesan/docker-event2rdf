@@ -158,8 +158,8 @@ dockevent:name a owl:DatatypeProperty ;
         rdfs:isDefinedBy  dockevent: ;
         rdfs:label        "event actor docker name"@en .
 
-dockevent:swarmIpPort a owl:DatatypeProperty ;
-        rdfs:comment      "A swarm ip:port for event actor."@en ;
+dockevent:nodeIpPort a owl:DatatypeProperty ;
+        rdfs:comment      "A node ip:port for event actor."@en ;
         rdfs:domain       dockevent:Actor ;
         rdfs:range        xsd:string ;
         rdfs:isDefinedBy  dockevent: ;
