@@ -1,6 +1,7 @@
 version: "2"
 services:
   event2rdf:
+    restart: always
     build: .
     environment:
       - DOCKER_ENDPOINT=tcp://192.168.122.2:4000

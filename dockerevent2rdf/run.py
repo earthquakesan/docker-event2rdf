@@ -20,8 +20,6 @@ virtuoso_connector = VirtuosoConnector(
     default_graph_uri=default_graph_uri
 )
 
-import pprint
-pprinter = pprint.PrettyPrinter()
 for event_bytestring in event_listener.listen():
     event = Event(event_bytestring)
     e2rdf = Event2RDF(timezone=timezone)

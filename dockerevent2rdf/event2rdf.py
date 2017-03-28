@@ -56,7 +56,7 @@ class Event2RDF(object):
         event_action = event.get("Action", "")
         if ":" in event_action:
             event_action_type = event_action.split(":")[0]
-            event_action_extra = event_action.split(":")[-1]
+            event_action_extra = event_action.split(":")[-1].strip()
             event_node.add(DOCKEVENT.actionExtra, Literal(event_action_extra, datatype=XSD.string))
         else:
             event_action_type = event_action
