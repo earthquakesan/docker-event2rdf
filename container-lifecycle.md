@@ -1,4 +1,5 @@
 # Creation
+```
 {'Action': 'create',
  'Actor': {'Attributes': {'image': 'big-knob',
                           'name': 'hungry_lamport',
@@ -17,7 +18,9 @@
  'status': 'create',
  'time': 1490366451,
  'timeNano': 1490366451606849101}
+```
 # Console attach
+```
 {'Action': 'attach',
  'Actor': {'Attributes': {'image': 'big-knob',
                           'name': 'hungry_lamport',
@@ -36,7 +39,9 @@
  'status': 'attach',
  'time': 1490366451,
  'timeNano': 1490366451612649782}
+```
 # Network connect
+```
 {'Action': 'connect',
  'Actor': {'Attributes': {'container': '557b59d438520f3da694be511249172897c43aa7480d8a22d4aa56bc69f37a27',
                           'name': 'bridge',
@@ -54,7 +59,9 @@
           'Name': 'node1'},
  'time': 1490366452,
  'timeNano': 1490366452024625646}
+```
 # Container start
+```
 {'Action': 'start',
  'Actor': {'Attributes': {'image': 'big-knob',
                           'name': 'hungry_lamport',
@@ -73,7 +80,9 @@
  'status': 'start',
  'time': 1490366452,
  'timeNano': 1490366452398927870}
-# Container resize???
+```
+# Container resize
+```
 {'Action': 'resize',
  'Actor': {'Attributes': {'height': '59',
                           'image': 'big-knob',
@@ -94,7 +103,9 @@
  'status': 'resize',
  'time': 1490366452,
  'timeNano': 1490366452400741636}
+```
 # Exec_create
+```
 {'Action': 'exec_create: /bin/sh -c /healthcheck.sh',
  'Actor': {'Attributes': {'image': 'big-knob',
                           'name': 'hungry_lamport',
@@ -113,7 +124,9 @@
  'status': 'exec_create: /bin/sh -c /healthcheck.sh',
  'time': 1490366455,
  'timeNano': 1490366455399637524}
+```
 # Exec_start
+```
 {'Action': 'exec_start: /bin/sh -c /healthcheck.sh',
  'Actor': {'Attributes': {'image': 'big-knob',
                           'name': 'hungry_lamport',
@@ -132,7 +145,9 @@
  'status': 'exec_start: /bin/sh -c /healthcheck.sh',
  'time': 1490366455,
  'timeNano': 1490366455399974037}
+```
 # health_status: healthy
+```
 {'Action': 'health_status: healthy',
  'Actor': {'Attributes': {'image': 'big-knob',
                           'name': 'hungry_lamport',
@@ -151,7 +166,9 @@
  'status': 'health_status: healthy',
  'time': 1490366455,
  'timeNano': 1490366455499707317}
+```
 # health_status: unheatlhy
+```
 {'Action': 'health_status: unhealthy',
  'Actor': {'Attributes': {'com.docker.swarm.affinities': '[]',
                           'com.docker.swarm.id': 'e3291b57ae247a9e2bad85a2bbd9309f124e18647841df9273dbfafadf988179',
@@ -172,7 +189,9 @@
  'status': 'health_status: unhealthy',
  'time': 1490368420,
  'timeNano': 1490368420405686145}
+```
 # Container die
+```
 {'Action': 'die',
  'Actor': {'Attributes': {'exitCode': '0',
                           'image': 'big-knob',
@@ -192,7 +211,9 @@
  'status': 'die',
  'time': 1490366543,
  'timeNano': 1490366543927666503}
+```
 # Network disconnect
+```
 {'Action': 'disconnect',
  'Actor': {'Attributes': {'container': '557b59d438520f3da694be511249172897c43aa7480d8a22d4aa56bc69f37a27',
                           'name': 'bridge',
@@ -210,7 +231,9 @@
           'Name': 'node1'},
  'time': 1490366544,
  'timeNano': 1490366544237025111}
+```
 # Container destroy
+```
 {'Action': 'destroy',
  'Actor': {'Attributes': {'image': 'big-knob',
                           'name': 'hungry_lamport',
@@ -229,3 +252,4 @@
  'status': 'destroy',
  'time': 1490366544,
  'timeNano': 1490366544533987432}
+```

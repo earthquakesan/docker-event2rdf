@@ -1,9 +1,9 @@
 @prefix owl:    <http://www.w3.org/2002/07/owl#> .
 @prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix dockevent: <http://ontology.aksw.org/dockevent/>
-@prefix dockevent_types: <http://ontology.aksw.org/dockevent/types/>
-@prefix dockevent_actions: <http://ontology.aksw.org/dockevent/actions/>
+@prefix dockevent: <http://ontology.aksw.org/dockevent/> .
+@prefix dockevent_types: <http://ontology.aksw.org/dockevent/types/> .
+@prefix dockevent_actions: <http://ontology.aksw.org/dockevent/actions/> .
 
 
 dockevent:Event a owl:Class ;
