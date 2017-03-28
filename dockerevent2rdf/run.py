@@ -28,4 +28,3 @@ for event_bytestring in event_listener.listen():
     e2rdf.add_event_to_graph(event.event)
     ntriples = e2rdf.serialize().decode("utf-8")
     virtuoso_connector.insert_triples(ntriples)
-    break

@@ -1,0 +1,22 @@
+version: "2"
+services:
+  event2rdf:
+    build: .
+    environment:
+      - DOCKER_ENDPOINT=tcp://192.168.122.2:4000
+      - TIMEZONE=Europe/Berlin
+      - VIRTUOSO_ENDPOINT=http://my-virtuoso:8890/sparql-auth
+      - DBA_USERNAME=dba
+      - DBA_PASSWORD=dba
+      - DEFAULT_GRAPH_URI=http://example.com/
+  my-virtuoso:
+    image: tenforce/virtuoso
+    environment:
+      - DBA_PASSWORD=dba
+      - SPARQL_UPDATE=true
+      - DEFAULT_GRAPH=http://example.com/
+    volumes:
+      - ./virtuoso/db:/data
+    ports:
+      - 1111:1111
+      - 8890:8890
